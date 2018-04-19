@@ -63,11 +63,25 @@ class: center, middle
 .left[- let
 	- 'let' is like 'var' only scoped in block and not in function]
 ---
+name: string
+
 # .center[Super Strings...]
 .left[- are encapsulated in ` (Grave accent)
 - don't need to escape Quotation Marks
 - are capable of multiline Strings without escapes and line joins
 - can now use JavaScript, without the need to escape, through the use of ${}]
+---
+```javascript
+var template = `
+  <div>
+    <h3>Good Morning ${name}</h3>
+    <p>
+      That item will cost you
+      <b>${amount*price}</b>
+      dollars.
+    </p>
+  </div>`
+```
 ---
 name: functions
 	    
