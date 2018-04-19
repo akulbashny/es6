@@ -109,29 +109,6 @@ function (x) {
 //shortest	    
 (x) => x * 2
 ```
----
-name: promise
-
-# .center[Promise]
-.left[- JavaScript doesn't have threads 
-- works with the help of Arrow Functions
-- Promises is a new object which helps to synchronize processes
-- Promises.all() can take an array of promises and creat a new promise which waits for the array to finish]
----
-template: promise
-Code:
-
-```javascript
-fs.readFile("file.txt", function(err, file) {
-    db.fetchNames(function(err, names) {
-        processFile(file, names, function(err, outfile) {
-            fs.writeFile('file.txt',outfile, function(err, status) {
-                console.log("we are done writing the file");
-            })
-        });
-    })
-});
-```
 	    
 	    
     </textarea>
