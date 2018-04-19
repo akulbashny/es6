@@ -69,8 +69,30 @@ class: center, middle
 - are capable of multiline Strings without escapes and line joins
 - can now use JavaScript, without the need to escape, through the use of ${}]
 ---
+name: functions
+	    
 # .center[Arrow Functions]
-.left[text location]
+.left[- Shorter version to write functions
+less syntax/overhead
+- Syntax
+	- (brackets with parameters)=>{function}]
+	    
+---
+template: functions
+	    
+```javascript	    
+//regular
+function (x) {
+    return x * 2;
+}
+//arrow style
+(x) => {
+    return x * 2;
+}
+//shorter
+(x) => { return x * 2; }
+//shortest	    
+(x) => x * 2
 ---
 name: promise
 # .center[Promise]
