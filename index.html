@@ -120,17 +120,7 @@ name: promise
 ---
 template: promise
 	    
-```javascript
-fs.readFile("file.txt", function(err, file) {
-    db.fetchNames(function(err, names) {
-        processFile(file, names, function(err, outfile) {
-            fs.writeFile('file.txt',outfile, function(err, status) {
-                console.log("we are done writing the file");
-            })
-        });
-    })
-});
-```
+
 ---
 class: center, middle
 
