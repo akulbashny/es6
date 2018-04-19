@@ -42,24 +42,24 @@ class: center, middle
 - Short for ECMAScript Version 6
 - ES is JavaScript after standardisation through ECMA International
 - JavaScript is the most popular implementation
-	- others are SpiderMonkey, V8 and ActionScript]
+	- Others are SpiderMonkey, V8 and ActionScript]
 ---
 # .center[Variables]
 .left[- declaration through 'var' is prone to issues
 	- 'var' is function-scoped
-	- variables need to be hoisted in code
-	- hoisted variables may lead to reference issues]
+	- Variables need to be hoisted in code
+	- Hoisted variables may lead to reference issues]
 
-.left[- no real const variables
-	- need of help functions
-	- leads to bloating code]
+.left[- No real const variables
+	- Need of help functions
+	- Leads to bloating code]
 
 ---
 # .center[const and let]
 .center[There are two new ways of creating a variable]
 .left[- const
-	- const declaration creates a read-only named constant
-	- no need for help functions]
+	- 'const' declaration creates a read-only named constant
+	- No need for help functions]
 .left[- let
 	- 'let' is like 'var' only scoped in block and not in function]
 ---
@@ -73,8 +73,25 @@ class: center, middle
 .left[text location]
 ---
 # .center[Promise]
-.left[text location]
+.left[- JavaScript doesn't have threads 
+- works with the help of Arrow Functions
+- Promises is a new object which helps to synchronize processes
+- Promises.all() can take an array of promises and creat a new promise which waits for the array to finish]
+--
+Code:
 
+```javascript
+fs.readFile("file.txt", function(err, file) {
+    db.fetchNames(function(err, names) {
+        processFile(file, names, function(err, outfile) {
+            fs.writeFile('file.txt',outfile, function(err, status) {
+                console.log("we are done writing the file");
+            })
+        });
+    })
+});
+end
+```
 	    
 	    
     </textarea>
