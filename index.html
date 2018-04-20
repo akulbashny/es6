@@ -121,14 +121,13 @@ var output = input.map(function(x) {
 var output = input.map((x)=>x*2);
 ```
 ---
----
----
 # .center[Arrow Functions - this]
 .left[- In Normal Functions 'this' refers to the function the object is called on
 - Need for the 'self-pattern'
 	- variable 'self' at the beginning of the function
 	- 'self' is now able to return the reference of the object where the function is defined
 - In Arrow Functions the context is capured where the function is defined and not called]
+---
 ```javascript
 var self = this;
 ```
