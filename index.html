@@ -110,7 +110,19 @@ function (x) {
 (x) => x * 2
 ```
 ---
-name: promise
+template: functions
+
+```
+//normal
+var output = input.map(function(x) {
+    return x * 2;
+});
+//with Arrow Functions
+var output = input.map((x)=>x*2);
+```
+
+---
+name: prom
 
 # .center[Promise]
 .left[- JavaScript doesn't have threads 
