@@ -171,6 +171,36 @@ fs.readFile("file.txt", function(err, file) {
 
 ---
 
+template: prom
+
+```javascript
+var prom = makeSomePromise();
+//value not ready yet
+prom.then((value)=>{
+    //do something with the value
+})
+```
+
+---
+template: prom
+
+```javascript
+ fs.readFile("file.txt")
+        .then((file) => {
+            return db.fetchNames().then((names)=>{
+                return processFile(file,names)
+            })
+        })
+        .then((outfile)=>{
+            return fs.writeFile('file.txt',outfile);
+        })
+        .then(()=>{
+            console.log("we are done writing the file");
+        });
+```
+
+---
+
 class: center, middle
 
 # Thank you for your attention
