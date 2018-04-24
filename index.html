@@ -37,13 +37,16 @@ class: center, middle
 6. Promise
 
 ---
+
 # .center[What is ES6?]
 .left[
 - Short for ECMAScript Version 6
 - ES is JavaScript after standardisation through ECMA International
 - JavaScript is the most popular implementation
 	- Others are SpiderMonkey, V8 and ActionScript]
+
 ---
+
 # .center[Variables]
 .left[- declaration through 'var' is prone to issues
 	- 'var' is function-scoped
@@ -55,6 +58,7 @@ class: center, middle
 	- Leads to bloating code]
 
 ---
+
 # .center[const and let]
 .center[There are two new ways of creating a variable]
 .left[- const
@@ -62,7 +66,9 @@ class: center, middle
 	- No need for help functions]
 .left[- let
 	- 'let' is like 'var' only scoped in block and not in function]
+
 ---
+
 name: string
 
 # .center[Super Strings...]
@@ -70,7 +76,9 @@ name: string
 - don't need to escape Quotation Marks
 - are capable of multiline Strings without escapes and line joins
 - can now use JavaScript, without the need to escape, through the use of ${}]
+
 ---
+
 template: string
 
 ```javascript
@@ -86,6 +94,7 @@ var template = `
 ```
 
 ---
+
 name: functions
 	    
 # .center[Arrow Functions]
@@ -94,6 +103,7 @@ less syntax/overhead
 - Syntax
 	- (brackets with parameters)=>{function body}]
 ---
+
 template: functions
 
 ```javascript	    
@@ -123,13 +133,16 @@ var output = input.map((x)=>x*2);
 ```
 
 ---
+
 # .center[Arrow Functions - this]
 .left[- In Normal Functions 'this' refers to the function the object is called on
 - Need for the 'self-pattern'
 	- variable 'self' at the beginning of the function
 	- 'self' is now able to return the reference of the object where the function is defined
 - In Arrow Functions the context is capured where the function is defined and not called]
+
 ---
+
 name: prom
 
 # .center[Promise]
@@ -137,6 +150,8 @@ name: prom
 - works with the help of Arrow Functions
 - Promises is a new object which helps to synchronize processes
 - Promises.all() can take an array of promises and creat a new promise which waits for the array to finish]
+
+---
 
 ```javascript
 fs.readFile("file.txt", function(err, file) {
