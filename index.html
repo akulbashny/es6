@@ -135,7 +135,8 @@ name: prom
 - Promises is a new object which helps to synchronize processes
 - Promises.all() can take an array of promises and creat a new promise which waits for the array to finish]
 
-    fs.readFile("file.txt", function(err, file) {
+```javascript
+	fs.readFile("file.txt", function(err, file) {
         db.fetchNames(function(err, names) {
             processFile(file, names, function(err, outfile) {
                 fs.writeFile('file.txt',outfile, function(err, status) {
@@ -144,7 +145,7 @@ name: prom
             });
         })
     });
-
+```
 ---
 class: center, middle
 
